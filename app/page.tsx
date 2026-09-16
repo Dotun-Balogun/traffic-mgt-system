@@ -7,7 +7,7 @@ import ResultsReadout, { CountResults } from "@/components/ResultsReadout";
 import ZoneEditor, { Zone } from "@/components/ZoneEditor";
 import HistoryChart, { HistoryEntry } from "@/components/HistoryChart";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API_URL = process.env.NEXT_API_URL ?? "http://localhost:8000";
 
 export default function Home() {
   const [file, setFile] = useState<File | null>(null);
